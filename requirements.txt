@@ -1,0 +1,33 @@
+# Core Data Science Libraries
+pandas>=1.5.0
+numpy>=1.21.0
+scikit-learn>=1.1.0
+
+# Deep Learning Framework
+torch>=1.12.0
+torchvision>=0.13.0
+torchaudio>=0.12.0
+
+# Graph Neural Network Library
+torch-geometric>=2.1.0
+
+# Visualization Libraries
+matplotlib>=3.5.0
+seaborn>=0.11.0
+
+# Additional Dependencies for torch-geometric
+torch-scatter>=2.0.9
+torch-sparse>=0.6.15
+torch-cluster>=1.6.0
+torch-spline-conv>=1.2.1
+
+# Optional: CUDA support (uncomment if using GPU)
+# torch-geometric-gpu>=2.1.0
+
+# Development and Jupyter (optional)
+# jupyter>=1.0.0
+# ipykernel>=6.0.0
+
+# File I/O (if needed for additional formats)
+# openpyxl>=3.0.0  # For Excel files
+# h5py>=3.0.0      # For HDF5 files
