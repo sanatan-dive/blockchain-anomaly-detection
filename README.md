@@ -18,27 +18,21 @@ This project implements a novel Graph Neural Network (GNN) framework for real-ti
 
 ```
 ├── code/                           # Source code and implementations
-│   ├── models/                     # GNN model architectures
-│   ├── preprocessing/              # Data preprocessing pipelines
-│   ├── training/                   # Training scripts and utilities
-│   ├── evaluation/                 # Performance evaluation tools
-│   └── main.py                     # Main application entry point
-├── images/                         # Visual resources and results
-│   ├── architecture/               # System architecture diagrams
-│   ├── results/                    # Performance visualizations
-│   └── charts/                     # Analysis charts and graphs
-├── dataset/                        # Blockchain datasets
-│   ├── elliptic/                   # Elliptic Bitcoin dataset
-│   ├── synthetic/                  # Synthetic datasets
-│   └── processed/                  # Preprocessed data files
-├── docs/                           # Documentation
-│   ├── methodology.md              # Detailed methodology
-│   ├── installation.md             # Installation guide
-│   └── user_guide.md               # Usage instructions
-└── smart-contracts/                # Solidity smart contracts
-    ├── contracts/                  # Contract source files
-    ├── migrations/                 # Deployment migrations
-    └── tests/                      # Contract test files
+│   ├── Model1.ipynb               # Main Jupyter notebook with GNN implementation
+│   └── gnn_flagged_transactions.csv # Generated flagged transactions dataset
+├── images/                         # Performance visualization results
+│   ├── confusion_matrix.png       # Model confusion matrix
+│   ├── feature_importance.png     # Feature importance analysis
+│   ├── performance_metrics.png    # Overall performance metrics
+│   ├── precision_recall_curve.png # Precision-recall curve
+│   ├── prediction_distribution.png # Prediction probability distribution
+│   └── roc_curve.png              # ROC curve visualization
+├── models/                         # Trained model files
+│   └── best_gnn_model.pth         # Best performing GNN model weights
+├── data/                           # Dataset directory (for external datasets)
+├── docs/                           # Documentation and research papers
+├── requirements.txt                # Python dependencies
+└── README.md                       # Project documentation
 ```
 
 ## 🛠️ Installation
@@ -82,18 +76,32 @@ pip install torch-geometric
 
 ## 🎯 Usage
 
-### Basic Usage
+### Running the Analysis
+
+1. **Open the Jupyter Notebook**
 ```bash
-# Run the main anomaly detection pipeline
-python code/main.py --dataset elliptic --model gcn --epochs 500
+# Navigate to the code directory
+cd code
 
-# Evaluate on test set
-python code/evaluation/evaluate.py --model_path models/best_model.pth
-
-# Deploy smart contract
-cd smart-contracts
-truffle migrate --network testnet
+# Launch Jupyter Notebook
+jupyter notebook Model1.ipynb
 ```
+
+2. **Or run in VS Code**
+```bash
+# Open the notebook in VS Code
+code code/Model1.ipynb
+```
+
+3. **View Results**
+- Check the `images/` directory for performance visualizations
+- Review the `models/best_gnn_model.pth` for the trained model weights
+- Analyze flagged transactions in `code/gnn_flagged_transactions.csv`
+
+### Reproducing Results
+- Run all cells in `Model1.ipynb` sequentially
+- Ensure you have the required dependencies installed
+- Update dataset paths if using external datasets in the `data/` directory
 
 ## 📈 Results Summary
 
