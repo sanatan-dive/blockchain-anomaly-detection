@@ -140,17 +140,6 @@ The framework consists of three main components:
 
 † Corresponding author ‡ Equal contribution * Principal Investigator
 
-## 📚 Citation
-
-```bibtex
-@article{sharma2024blockchain,
-  title={Novel Graph Neural Network for Real-Time Blockchain Anomaly Detection with Smart Contract Support},
-  author={Sharma, Sanatan and Kumar, Sudhakar and Singh, Sunil K. and Hsu, Ching-Hsien and Arya, Varsha and Chui, Kwok Tai and Gupta, Brij B.},
-  journal={IEEE Transactions on Network Science and Engineering},
-  year={2024},
-  publisher={IEEE}
-}
-```
 
 ## 🙏 Acknowledgments
 
